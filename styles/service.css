@@ -1,0 +1,284 @@
+* {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      
+      
+  }
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  body::before,
+  body::after {
+    content: '';
+    position: absolute;
+    z-index: -10;
+    border-radius: 50%;
+    filter: blur(10rem);
+    flex: 1;
+  }
+  
+  /* วงกลมสีชมพูด้านขวา */
+  body::before {
+    right: 11rem;
+    top: -6rem;
+    height: 31.25rem;
+    width: 31.25rem;
+    background-color: #e2f2fb;
+  }
+  
+  /* วงกลมสีม่วงด้านซ้าย */
+  body::after {
+    left: -35rem;
+    top: -1rem;
+    height: 31.25rem;
+    width: 50rem;
+    background-color: #f3d7fb;
+  }
+  
+
+  /* Responsive styles */
+  @media (min-width: 640px) {
+    body::before {
+      width: 68.75rem;
+    }
+    body::after {
+      width: 68.75rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body::after {
+      left: -33rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body::after {
+      left: -28rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    body::after {
+      left: -15rem;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    body::after {
+      left: -5rem;
+    }
+  }
+
+  
+  /*---------------------------------------------------------------ส่วนเมนู--------------------------------------------------------------*/
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid rgba(143, 143, 143, 0.2); /* เพิ่มขอบเฉพาะด้านล่าง */
+    padding: 8px 20px;
+  }
+  
+  .navbar-brand {
+    background-image: url('https://img5.pic.in.th/file/secure-sv1/-32633ca0694787b5bc.png'); /* เปลี่ยนเป็น URL รูปของคุณ */
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 220px; /* ปรับขนาดตามรูป */
+    height: 50px; /* ปรับขนาดตามรูป */
+    text-indent: -9999px; /* ซ่อนข้อความ */
+    margin-right: 20px; /* ขยับ logo ไปทางขวาเล็กน้อย */
+  }
+  
+  .navbar-nav {
+    margin-right: auto; /* เปลี่ยนจาก margin-left เป็น margin-right */
+    padding-left: 20px; /* ขยับเมนูมาทางขวาเล็กน้อย */
+  }
+  
+  .navbar-toggler {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: "none",
+    
+  }
+  
+  .nav-item {
+    border-radius: 80px;
+    transition: background 0.3s ease-in-out;
+    padding: 5px 10px;
+  }
+  
+  .nav-itpem {
+    border-radius: 80px;
+    transition: background 0.3s ease-in-out;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  /* .nav-item:hover {
+    background: rgba(137, 208, 255, 0.3);
+  } */
+  
+  /* ทำให้ภาพมีขนาดที่ยืดหยุ่น */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .image-container img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ทำให้ข้อความใน container มี margin ที่เหมาะสม */
+  .container {
+    margin-top: 100px; /* เพิ่มพื้นที่ด้านบนเพื่อไม่ให้โดน navbar */
+  }
+  
+  /* ปรับขนาดการแสดงผลบนมือถือ */
+  @media (max-width: 768px) {
+    .navbar-brand {
+        width: 100px;
+        height: 30px;
+    }
+  
+    .navbar-nav {
+        padding-right: 10px;
+    }
+  }
+  
+  
+
+/*---------------------------------------------------------------ส่วนบริการของเรา---------------------------------------------------------------*/
+
+
+
+
+
+
+  .choose {
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    
+  }
+  
+  .choose-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  .choose-box h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 32px;
+    
+  }
+  
+  .features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    
+  }
+  
+  .feature-item {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .feature-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .feature-icon i {
+    margin-top: 10px;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .feature-item h3 {
+    color: #474747;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .feature-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+  .pricing-price {
+    color: #474747;
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+  }
+  
+
+
+
+  /*---------------------------------------------------------------ส่วนท้ายเว็บ--------------------------------------------------------------*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #222;
+}
+.footer-section {
+  margin-bottom: 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.services i {
+  margin-right: 6px;
+}
+.bottom {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-section {
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+}

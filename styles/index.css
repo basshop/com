@@ -1,0 +1,375 @@
+* {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    
+    
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  z-index: -10;
+  border-radius: 50%;
+  filter: blur(10rem);
+  flex: 1;
+}
+
+/* วงกลมสีชมพูด้านขวา */
+body::before {
+  right: 11rem;
+  top: -6rem;
+  height: 31.25rem;
+  width: 31.25rem;
+  background-color: #fbe2e3;
+}
+
+/* วงกลมสีม่วงด้านซ้าย */
+body::after {
+  left: -35rem;
+  top: -1rem;
+  height: 31.25rem;
+  width: 50rem;
+  background-color: #dbd7fb;
+}
+
+
+
+/* Responsive styles */
+@media (min-width: 640px) {
+  body::before {
+    width: 68.75rem;
+  }
+  body::after {
+    width: 68.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body::after {
+    left: -33rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body::after {
+    left: -28rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  body::after {
+    left: -15rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  body::after {
+    left: -5rem;
+  }
+}
+
+/*---------------------------------------------------------------ส่วนเมนู--------------------------------------------------------------*/
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid rgba(143, 143, 143, 0.2); /* เพิ่มขอบเฉพาะด้านล่าง */
+  padding: 8px 20px;
+}
+
+.navbar-brand {
+  background-image: url('https://img5.pic.in.th/file/secure-sv1/-32633ca0694787b5bc.png'); /* เปลี่ยนเป็น URL รูปของคุณ */
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 220px; /* ปรับขนาดตามรูป */
+  height: 50px; /* ปรับขนาดตามรูป */
+  text-indent: -9999px; /* ซ่อนข้อความ */
+  margin-right: 20px; /* ขยับ logo ไปทางขวาเล็กน้อย */
+}
+
+.navbar-nav {
+  margin-right: auto; /* เปลี่ยนจาก margin-left เป็น margin-right */
+  padding-left: 20px; /* ขยับเมนูมาทางขวาเล็กน้อย */
+}
+
+.navbar-toggler {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: "none",
+  
+}
+
+.nav-item {
+  border-radius: 80px;
+  transition: background 0.3s ease-in-out;
+  padding: 5px 10px;
+}
+
+.nav-itpem {
+  border-radius: 80px;
+  transition: background 0.3s ease-in-out;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+/* .nav-item:hover {
+  background: rgba(137, 208, 255, 0.3);
+} */
+
+/* ทำให้ภาพมีขนาดที่ยืดหยุ่น */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.image-container img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ทำให้ข้อความใน container มี margin ที่เหมาะสม */
+.container {
+  margin-top: 100px; /* เพิ่มพื้นที่ด้านบนเพื่อไม่ให้โดน navbar */
+}
+
+/* ปรับขนาดการแสดงผลบนมือถือ */
+@media (max-width: 768px) {
+  .navbar-brand {
+      width: 100px;
+      height: 30px;
+  }
+
+  .navbar-nav {
+      padding-right: 10px;
+  }
+}
+
+
+
+.con {
+  max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+  margin: 0 auto;    /* จัดให้อยู่กึ่งกลาง */
+  padding: 0 15px;   /* เพิ่มระยะห่างจากขอบ (responsive) */
+  width: 100%;       /* ให้เต็มความกว้างเมื่อจอเล็กกว่า max-width */
+  color: #6e6e6e;
+  font-size: 1.2rem; /* ขนาดตัวอักษร */
+  line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+  margin-top: 20px; /* ระยะห่างด้านบน */
+}
+#bu {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 7px 14px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+/*---------------------------------------------------------------ส่วนเราคือใคร--------------------------------------------------------------*/
+.explain {
+  font-family: 'Kanit', 'Sukhumvit Set', 'Helvetica Neue', Arial, sans-serif;
+  perspective: 1000px;
+}
+
+.explain-box {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.explain-box:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.explain-box h1 {
+  color: #2d3748;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.explain-box h1:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4299e1, #48bb78);
+  border-radius: 2px;
+}
+
+.explain-box p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .explain-box {
+    padding: 30px 20px;
+    margin: 0 20px;
+  }
+  
+  .explain-box h1 {
+    font-size: 2rem;
+  }
+  
+  .explain-box p {
+    font-size: 1rem;
+  }
+}
+
+
+/*---------------------------------------------------------------ส่วนทำไมถึงเลือกเรา--------------------------------------------------------------*/
+.choose {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 200px;
+  
+}
+
+.choose-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.choose-box h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 32px;
+  
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  
+}
+
+.feature-item {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90deg, #d08aff, #7ac3ff, #94ffc1);
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  
+}
+
+.feature-icon i {
+  margin-top: 10px;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.feature-item h3 {
+  color: #474747;
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feature-item p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+
+
+/*---------------------------------------------------------------ส่วนท้ายเว็บ--------------------------------------------------------------*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #222;
+}
+.footer-section {
+  margin-bottom: 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.services i {
+  margin-right: 6px;
+}
+.bottom {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-section {
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+}
