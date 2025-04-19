@@ -1,6 +1,11 @@
-// This file is used to initialize pages. You can override it and control the page initialization.
-import type { AppProps } from "next/app";
+// pages/_app.tsx
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+import '../styles/service.css'
+import '../styles/team.css'
+import type { AppProps } from 'next/app'
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
 }
+
+export default MyApp
