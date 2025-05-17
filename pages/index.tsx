@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NextPage } from 'next';
 import Head from 'next/head';
-import '@/styles/index.css';
+import '@/styles/globals.css';
 
 const Home: NextPage = () => {
   const [result, setResult] = useState<string | null>(null);
@@ -152,16 +152,25 @@ const Home: NextPage = () => {
              color: '#6e6e6e',
                fontSize: '17px',
           }}>
-            บริการปล่อยเช่าเว็บไซต์เริ่มต้นแค่ 150 บาทดำเนินธุรกิจออนไลน์ โดยผู้เช่าสามารถใช้ฟีเจอร์ต่างๆ
+            บริการปล่อยเช่าเว็บไซต์เริ่มต้นแค่ 99 บาทดำเนินธุรกิจออนไลน์ โดยผู้เช่าสามารถใช้ฟีเจอร์ต่างๆ
             ที่พัฒนาไว้ เช่น ระบบมินเกม ระบบชำระเงิน ระบบโซเชียล หรือหน้าโปรไฟล์ร้านค้า
-            โดยไม่ต้องสร้างเว็บไซต์เอง
+            โดยไม่ต้องสร้างเว็บไซต์เองและรับทำเว็บแอปพลิเคชันตามความต้องการของลูกค้า
           </p>
-          <button style={
-            {
+            <button 
+            style={{
               margin: "10px",
-            }
-          } id="bu">ดูบริการของเรา</button>
-          <button id="bu">เช่าเว็บเลย</button>
+            }} 
+            id="bu" 
+            onClick={() => window.location.href = "/service"}
+            >
+            ดูบริการของเรา
+            </button>
+            <button 
+            id="bu" 
+            onClick={() => window.location.href = "https://www.facebook.com/profile.php?id=100087575394420"}
+            >
+            เช่าเว็บเลย
+            </button>
         </div>
 
         {/* Image Container - Moved to top right on desktop, below content on mobile */}
@@ -215,7 +224,7 @@ const Home: NextPage = () => {
             animation: "float 5s ease-in-out infinite"
           }}>
             <img 
-              src="https://img5.pic.in.th/file/secure-sv1/-356272d1e7d9cf0a4d.png" 
+              src="https://img2.pic.in.th/pic/---Google-Chrome-17_5_2568-12_23_52.png" 
               alt="Betashifts Preview" 
               style={{ 
                 width: "100%",

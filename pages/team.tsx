@@ -120,7 +120,7 @@ const Home: NextPage = () => {
         borderRadius: "10px",
        }} src="https://img2.pic.in.th/pic/-2025-04-19-133023.png" alt="" height={60} />
         </div>
-        <h3>อนุภาพ ศรีสวัสดิ์</h3>
+        <h3>Anupap Srisawat</h3>
         <p style={{
             maxWidth: '600px',
             wordWrap: 'break-word',
@@ -128,10 +128,10 @@ const Home: NextPage = () => {
             color: '#6e6e6e',
             fontWeight: 'bold',
             
-        }}>CEO </p>
+        }}>CEO / Developer</p>
         <p style={{
             marginTop: '10px',
-        }}>โอเคๆๆเดี๋ยวค่อยทำก็ได้ ขี้เกียจ</p>
+        }}>อย่าเบียว</p>
       </div>
 
     
@@ -141,9 +141,9 @@ const Home: NextPage = () => {
         <div className="feature-icon">
        <img style={{
         borderRadius: "10px",
-       }} src="https://img5.pic.in.th/file/secure-sv1/57c99566f51bedc64168e3ecd08215bb.jpg" alt="" height={60} />
+       }} src="https://img2.pic.in.th/pic/imagea04c478d320fd052.png" alt="" height={60} />
         </div>
-        <h3>บริการรับทำเว็บไซต์</h3>
+        <h3>G'got</h3>
         <p style={{
             maxWidth: '600px',
             wordWrap: 'break-word',
@@ -155,7 +155,8 @@ const Home: NextPage = () => {
       
         <p style={{
             marginTop: '10px',
-        }}>โอเคๆๆเดี๋ยวค่อยทำก็ได้ ขี้เกียจ</p>
+        }}>𝐅𝐫𝐞𝐞𝐝𝐨𝐦 𝐢𝐬 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐭𝐡𝐢𝐧𝐠 🤍✨
+</p>
       </div>
     </div>
   </div>

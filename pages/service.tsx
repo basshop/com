@@ -158,9 +158,9 @@ const Home: NextPage = () => {
   
       <div className="feature-item">
         <div className="feature-icon">
-       <img src="https://img5.pic.in.th/file/secure-sv1/kawaii77aef6f798f28865.png" alt="" height={60} />
+        <i className="bi bi-clouds"></i>
         </div>
-        <h3>เว็บโฮสติ้ง</h3>
+        <h3>Wed Hosting</h3>
         <p style={{
             maxWidth: '600px',
             wordWrap: 'break-word',
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
             fontWeight: 'bold',
             
         }}>เริ่มต้นเพียง</p>
-        <div  className="pricing-price">150 บาท / เดือน</div>
+        <div  className="pricing-price">700 บาท / ปี</div>
         <center> <button style={{
                     backgroundColor: 'white',
                     color: '#474747',
@@ -186,19 +186,19 @@ const Home: NextPage = () => {
             marginTop: '10px',
         }}>สิ่งที่คุณได้</p>
         <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
-          <li>UI ที่สวยใช้งานง่าย</li>
-          <li>เว็บทันสมัยน่าใช้</li>
-          <li>ระบบเติมเงินอัตโนมัติ</li>
-          <li>ระบบมินิเกม</li>
-          <li>ผสมระหว่างเว็บขายของกับโซเซียลมีเดีย</li>
-          <li>ระบบโซเชียล</li>
+            <li>พื้นที่เก็บข้อมูล SSD ความเร็วสูง</li>
+            <li>รองรับการใช้งาน HTTPS</li>
+            <li>ระบบสำรองข้อมูลอัตโนมัติ</li>
+            <li>การสนับสนุนตลอด 24 ชั่วโมง</li>
+            <li>แผงควบคุมใช้งานง่าย</li>
+            <li>รองรับหลายโดเมน</li>
         </ul>
       </div>
 
     
       <div className="feature-item">
         <div className="feature-icon">
-       <img src="https://img5.pic.in.th/file/secure-sv1/kawaii77aef6f798f28865.png" alt="" height={60} />
+        <i className="bi bi-braces"></i>
         </div>
         <h3>บริการปล่อยเช่าเว็บไซต์</h3>
         <p style={{
@@ -209,7 +209,7 @@ const Home: NextPage = () => {
             fontWeight: 'bold',
             
         }}>เริ่มต้นเพียง</p>
-        <div  className="pricing-price">150 บาท / เดือน</div>
+        <div  className="pricing-price">99 บาท / เดือน</div>
         <center> <button style={{
                     backgroundColor: 'white',
                     color: '#474747',
@@ -237,7 +237,7 @@ const Home: NextPage = () => {
     
       <div className="feature-item">
         <div className="feature-icon">
-       <img src="https://img5.pic.in.th/file/secure-sv1/kawaii77aef6f798f28865.png" alt="" height={60} />
+        <i className="fi fi-rr-hammer"></i>
         </div>
         <h3>บริการรับทำเว็บไซต์</h3>
         <p style={{
@@ -265,12 +265,12 @@ const Home: NextPage = () => {
             marginTop: '10px',
         }}>สิ่งที่คุณได้</p>
         <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
-          <li>UI ที่สวยใช้งานง่าย</li>
-          <li>เว็บทันสมัยน่าใช้</li>
-          <li>ระบบเติมเงินอัตโนมัติ</li>
-          <li>ระบบมินิเกม</li>
-          <li>ผสมระหว่างเว็บขายของกับโซเซียลมีเดีย</li>
-          <li>ระบบโซเชียล</li>
+            <li>ออกแบบเว็บไซต์ให้ตรงตามความต้องการ</li>
+            <li>รองรับการใช้งานบนทุกอุปกรณ์ (Responsive Design)</li>
+            <li>เพิ่มฟีเจอร์เฉพาะที่เหมาะสมกับธุรกิจของคุณ</li>
+            <li>ปรับแต่ง UI/UX ให้ใช้งานง่ายและทันสมัย</li>
+            <li>รองรับ SEO เพื่อเพิ่มโอกาสในการค้นหา</li>
+            <li>บริการหลังการขายและการดูแลเว็บไซต์</li>
         </ul>
       </div>
     </div>
